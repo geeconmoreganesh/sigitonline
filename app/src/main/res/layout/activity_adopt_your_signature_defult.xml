@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard_in_progress">
+    <RelativeLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adopt your Signature"
+            android:textColor="@color/mdtp_white"
+            android:fontFamily="@font/gothambold"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_marginRight="10sp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:contentDescription="@string/app_name"
+            tools:ignore="RtlHardcoded"
+            app:tint="@color/mdtp_white" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab"
+        android:orientation="vertical"
+        android:layout_above="@+id/bottom_button">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/id_signature_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/bottom_button"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:layout_alignParentBottom="true"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_Saved_Sign_as_Default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/muli_bold"
+        android:background="@drawable/button_curve"
+        android:textColor="@color/mdtp_white"
+        android:textAlignment="center"
+        android:text="Saved Sign as Default"/>
+    <TextView
+        android:id="@+id/tv_Adopt_New_Sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/muli_bold"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_curve"
+        android:textColor="@color/mdtp_white"
+        android:textAlignment="center"
+        android:text="Adopt New Sign"/>
+</LinearLayout>
+</RelativeLayout>

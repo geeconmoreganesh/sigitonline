@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard_in_progress">
+
+    <RelativeLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/mdtp_white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Credits"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/back_img"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_marginRight="10sp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:contentDescription="@string/app_name"
+            tools:ignore="RtlHardcoded"
+            app:tint="@color/colorPrimaryDark" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/Ll_card_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end|right"
+        android:layout_below="@+id/tab"
+        android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_large"
+        android:visibility="visible"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/imput"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="@dimen/spacing_xmlarge"
+            android:layout_marginTop="@dimen/spacing_middle"
+            android:background="@color/grey_3"
+            app:hintEnabled="false">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_amound"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_round_bg_outline"
+                android:hint="Enter Amount"
+                android:textSize="13sp"
+                android:textColorHint="@color/grey_20"/>
+        </com.google.android.material.textfield.TextInputLayout>
+            <com.stripe.android.view.CardInputWidget
+                android:id="@+id/cardInputWidget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/promocode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Enter Promocode"/>
+            <Button
+                android:id="@+id/paymentbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Credits"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="right"
+                android:theme="@style/Button.Primary" />
+        </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/add_wallet"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:background="#E6EDFF"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/spacing_large"
+            android:paddingTop="@dimen/spacing_large"
+            android:paddingRight="@dimen/spacing_large">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/add_wallet"
+                android:layout_marginTop="15dp"
+                android:layout_margin="15dp"
+                android:layout_marginBottom="@dimen/spacing_large"
+                android:background="@drawable/layout_curve2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/spacing_large"
+                android:paddingTop="@dimen/spacing_large"
+                android:paddingRight="@dimen/spacing_large">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/avatarbg"/>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_marginTop="14dp"
+                 android:fontFamily="@font/poppins_medium"
+                 android:textSize="15sp"
+                 android:textColor="@color/colorPrimaryDark"
+                 android:text="1 $ = 5 credits"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="14dp"
+                    android:text="Each credit let you send one Docket."/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="23dp"
+                    android:textAlignment="center"
+                    android:text="An Docket can contain as many document as you want."/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

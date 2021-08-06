@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard_in_progress">
+    <RelativeLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download pdf "
+            android:fontFamily="@font/gothambold"
+            android:textColor="@color/mdtp_white"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_marginRight="10sp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:contentDescription="@string/app_name"
+            tools:ignore="RtlHardcoded"
+            app:tint="@color/mdtp_white" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab"
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@drawable/world_map">
+        <ImageView
+            android:id="@+id/iv_download_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/image_border_two"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/download_pdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Download"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:padding="15dp"
+        android:layout_alignParentEnd="true"
+        android:theme="@style/Button.Primary" />
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

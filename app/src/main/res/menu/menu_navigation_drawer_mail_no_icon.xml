@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/grp_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all_inbox"
+            android:checked="true"
+            android:icon="@drawable/ic_home_black"
+            android:fontFamily="@font/gothambook"
+            android:title="Home"
+            />
+    </group>
+
+    <group
+        android:id="@+id/grp_2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inbox"
+            android:title="Notification"
+            android:icon="@drawable/ic_notifications"
+            android:fontFamily="@font/gothambook"
+            app:actionLayout="@layout/badge_navigation_plain" />
+        <item
+            android:id="@+id/nav_Wallet"
+            android:title="Wallet"
+            android:fontFamily="@font/gothambook"
+            android:icon="@drawable/ic_account_balance_wallet"
+            app:actionLayout="@layout/badge_navigation_colored" />
+        <item
+            android:id="@+id/nav_social"
+            android:title="Contact"
+            android:fontFamily="@font/gothambook"
+            android:icon="@drawable/ic_textsms"
+            app:actionLayout="@layout/badge_navigation_colored" />
+    </group>
+
+
+    <item
+        android:checkableBehavior="single"
+        android:fontFamily="@font/gothambook"
+        android:title="All labels">
+
+        <group
+            android:id="@+id/grp_3"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_starred"
+                android:icon="@drawable/ic_lock_outline"
+                android:title="Logout" />
+        </group>
+    </item>
+
+    <group
+        android:id="@+id/grp_5"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:fontFamily="@font/gothambook"
+            android:iconTint="@color/quantum_black_100"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help"
+            android:fontFamily="@font/gothambook"
+            android:iconTint="@color/quantum_black_100"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_Archive"
+            android:icon="@drawable/ic_help"
+            android:fontFamily="@font/gothambook"
+            android:iconTint="@color/quantum_black_100"
+            android:title="Archive List" />
+    </group>
+
+</menu>

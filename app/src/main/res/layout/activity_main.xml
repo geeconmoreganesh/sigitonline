@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/splash1"
+    android:orientation="vertical">
+
+    <!--   <com.airbnb.lottie.LottieAnimationView-->
+    <!--       android:layout_width="match_parent"-->
+    <!--       android:layout_height="match_parent"-->
+    <!--       app:lottie_autoPlay="true"-->
+    <!--       app:lottie_loop="true"-->
+    <!--       app:lottie_fileName="firework.json"/>-->
+
+    <!--   <com.henley.snowfall.SnowfallView-->
+    <!--       android:layout_width="match_parent"-->
+    <!--       android:layout_height="match_parent"-->
+    <!--       app:snowflakeAlphaMax="255"-->
+    <!--       app:snowflakeAlphaMin="150"-->
+    <!--       app:snowflakeAngleMax="10"-->
+    <!--       app:snowflakeImage="@drawable/snowflake"-->
+    <!--       app:snowflakeSizeMax="26dp"-->
+    <!--       app:snowflakeSizeMin="4dp"-->
+    <!--       app:snowflakeSpeedMax="12"-->
+    <!--       app:snowflakeSpeedMin="4"-->
+    <!--       app:snowflakesAlreadyFalling="false"-->
+    <!--       app:snowflakesFadingEnabled="true"-->
+    <!--       app:snowflakesNum="450" />-->
+
+
+    <!--   <RelativeLayout-->
+    <!--       android:layout_width="match_parent"-->
+    <!--       android:layout_height="match_parent"-->
+    <!--       android:gravity="center"-->
+    <!--       android:orientation="vertical">-->
+
+    <!--      <ImageView-->
+    <!--          android:id="@+id/logo"-->
+    <!--          android:layout_width="match_parent"-->
+    <!--          android:layout_height="wrap_content"-->
+    <!--          android:layout_marginTop="120sp"-->
+    <!--          android:src="@mipmap/logo_splash" />-->
+
+    <!--      <TextView-->
+    <!--          android:layout_width="match_parent"-->
+    <!--          android:layout_height="wrap_content"-->
+    <!--          android:layout_gravity="center"-->
+    <!--          android:layout_marginTop="10sp"-->
+    <!--          android:gravity="center"-->
+    <!--          android:layout_below="@+id/logo"-->
+    <!--          android:text="@string/tagline"-->
+    <!--          android:textColor="@color/voilet"-->
+    <!--          android:textSize="18sp"-->
+    <!--          android:textStyle="italic|bold" />-->
+    <!--   </RelativeLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:gravity="bottom"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_width="match_parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="bottom"-->
+<!--            android:padding="10dp"-->
+<!--            android:layout_gravity="right"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_width="wrap_content">-->
+<!--            <TextView-->
+<!--                android:id="@+id/logo"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:layout_marginRight="2dp"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="@color/mdtp_white"-->
+<!--                android:text="Version" />-->
+<!--            <TextView-->
+<!--                android:id="@+id/varsion"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textColor="@color/mdtp_white"-->
+<!--                android:layout_marginLeft="2dp"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textStyle="bold"-->
+<!--                android:text= "1.0.0" />-->
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

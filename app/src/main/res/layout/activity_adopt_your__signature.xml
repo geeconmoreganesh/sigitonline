@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard_in_progress">
+    <RelativeLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adopt your Signature"
+            android:textColor="@color/mdtp_white"
+            android:fontFamily="@font/gothambold"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_marginRight="10sp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:contentDescription="@string/app_name"
+            tools:ignore="RtlHardcoded"
+            app:tint="@color/mdtp_white" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttons_container"
+        android:layout_below="@+id/tab"
+        android:layout_margin="10dp"
+        android:id="@+id/signature_pad_container">
+
+
+        <com.github.gcacace.signaturepad.views.SignaturePad
+            android:layout_width="match_parent"
+            android:background="#EBEBEB"
+            android:layout_height="match_parent"
+            android:id="@+id/signature_pad" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons_container"
+        android:paddingTop="16dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/clear_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textColor="@color/mdtp_white"
+            android:background="@drawable/button_curve"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:enabled="false" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textColor="@color/mdtp_white"
+            android:background="@drawable/button_curve"
+            android:layout_height="wrap_content"
+            android:text="Apply"
+            android:enabled="false" />
+    </LinearLayout>
+</RelativeLayout>
