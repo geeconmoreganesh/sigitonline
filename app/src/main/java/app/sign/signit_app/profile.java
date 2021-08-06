@@ -82,6 +82,7 @@ public class profile extends AppCompatActivity {
                 String email=email_id.getText().toString().trim();
                 String passcode=passcord.getText().toString().trim();
             //    String passcode=passcord.getText().toString().trim();
+            //test
                 String memorableWord=memorable_word.getText().toString().trim();
                 Log.d("test10", "onClick: "+fullname+email);
                 update_profile(fullname,email,passcode,memorableWord);
